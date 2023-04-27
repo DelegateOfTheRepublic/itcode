@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Сотрудник месяца</title>
+</head>
+<body>
+    <header>
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-center">
+                <div class="flex items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <a href="main.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Список сотрудников</a>
+                        <a href="bestEmp.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Сотрудник месяца</a>
+                        <a href="addEmp.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Добавть сотрудника</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <article class="rounded-xl border border-gray-700 bg-gray-800 p-4 w-fit m-auto mt-16">
+            <div class="flex items-center gap-4">
+              <img
+                alt="Developer"
+                src="https://images.unsplash.com/photo-1614644147724-2d4785d69962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                class="h-16 w-16 rounded-full object-cover m-auto ml-0 mr-0"
+              />
+
+              <div>
+                <h3 class="text-lg font-medium text-white">Фомичёв Вилли Викторович</h3>
+
+                <div class="flow-root">
+                  <ul class="-m-1 flex flex-wrap">
+                    <li class="p-1 leading-none">
+                        <div class="relative">
+                            <p id="hs-leading-icon" name="hs-leading-icon" class="py-3 px-4 pl-11 w-full border-gray-200 bg-white shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">foma@mail.ru</p>
+                            <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                                <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="p-1 leading-none">
+                        <div class="relative">
+                            <p id="hs-leading-icon" name="hs-leading-icon" class="py-3 px-4 pl-11 bg-white w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">+7 (945) 345-23-43<p>
+                            <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                                <svg class="h-4 w-4 text-gray-400" width="16" height="16" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.6908 14.8431L16.7167 12.7325C16.4806 12.5669 16.2276 12.427 15.9618 12.3152C15.3396 12.0622 14.7442 12.0972 14.1956 12.419C13.7872 12.6129 13.2414 13.1835 12.7856 13.6407C11.2703 12.6864 9.41406 10.835 8.34431 9.21044L8.34362 9.20906C8.74237 8.79106 9.34256 8.22937 9.55362 7.81481C9.89874 7.24694 9.93449 6.63781 9.66568 6.01631C9.55157 5.74577 9.40597 5.48963 9.23187 5.25319L7.15768 2.33063C6.73831 1.73044 6.05287 1.38187 5.27049 1.375C4.41593 1.375 3.62668 1.72494 2.95224 2.39044C1.50437 3.68088 1.04718 5.58319 1.63156 7.89181C2.92887 13.0144 9.17893 19.2184 14.2499 20.4153C16.1928 20.9158 18.3461 20.5556 19.6097 19.0211C20.0717 18.502 20.6217 17.6729 20.6155 16.6719C20.6038 15.8744 20.2779 15.2357 19.6908 14.8431ZM18.5757 18.1136C17.6675 19.1661 16.3193 19.4886 14.5655 19.0761C9.99156 17.996 4.13612 12.1811 2.96531 7.55288C2.50812 5.74819 2.81131 4.35669 3.89206 3.3935C4.56031 2.79262 5.35024 2.40006 6.03431 3.12194C6.25568 3.46844 8.30512 6.23012 8.39793 6.54913C8.50793 6.80212 8.47356 6.94306 8.35531 7.14037C8.20337 7.42431 7.57499 8.008 7.31924 8.29331C6.89643 8.6735 6.83524 9.35206 7.16318 9.91719C8.33056 11.7088 10.3992 13.7713 12.0987 14.8321C12.5738 15.1112 13.2819 15.1394 13.6697 14.696C14.0045 14.3859 14.5277 13.7796 14.879 13.6104C15.1836 13.3884 15.6036 13.6414 15.9316 13.8607L18.9091 15.9734C19.5444 16.4312 19.1745 17.4811 18.5757 18.1136Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2">
+              <li>
+                <span
+                  class="block h-full rounded-lg border border-gray-700 p-4"
+                >
+                  <strong class="font-medium text-white">Должность</strong>
+
+                  <p class="mt-1 text-xs font-medium text-gray-300">
+                    Руководитель проекта
+                  </p>
+                </span>
+              </li>
+
+              <li>
+                <span
+                  class="block h-full rounded-lg border border-gray-700 p-4"
+                >
+                  <strong class="font-medium text-white">Домашний адрес</strong>
+
+                  <p class="mt-1 text-xs font-medium text-gray-300">
+                    РФ, г. Уфа, ул. Марсианов, д. 51, кв. 15
+                  </p>
+                </span>
+              </li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
